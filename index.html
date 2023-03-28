@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustCount</title>
+</head>
+<body>
+    <main class="cards">
+        <h2>CARDS</h2>
+        <section class="counter-card">
+            <p class="counter-name">Contador 1</p>
+            <p class="counter-type">manual</p>
+            <p class="progress-type">progressivo</p>
+            <img src="none" alt="none">
+        </section>
+        <hr>
+        <section class="counter-card">
+            <p class="counter-name">Contador 2</p>
+            <p class="counter-type">automático</p>
+            <p class="progress-type">regressivo</p>
+            <img src="none" alt="none">
+        </section>
+        <hr>
+        <section>
+            <button id="">+</button><br>
+        </section>
+    </main>
+    <hr>
+    <hr>
+    <main class="card-page">
+        <h2>CARD DETAILS</h2>
+        <section class="counter-page">
+            <p class="counter-name">Contador 1</p>
+            <p class="counter-description">Contador 1 que conta regressivamente de modo manual</p>
+            <p class="counter-type">manual</p>
+            <p class="progress-type">progressivo</p>
+            <img src="none" alt="none"><br>
+            <input type="checkbox" name="arquivar">
+            <label for="arquivar">arquivar</label>
+        </section>
+    </main>
+    <hr>
+    <hr>
+    <main class="archived-cards">
+        <h2>ARCHIVED CARDS</h2>
+        <section class="counter-card">
+            <p class="counter-name">Contador 3</p>
+            <p class="counter-type">manual</p>
+            <p class="progress-type">progressivo</p>
+            <img src="none" alt="none">
+        </section>
+        <hr>
+        <section class="counter-card">
+            <p class="counter-name">Contador 4</p>
+            <p class="counter-type">automático</p>
+            <p class="progress-type">regressivo</p>
+            <img src="none" alt="none">
+        </section>
+    </main>
+    <hr>
+    <hr>
+    <main class="archived-card-page">
+        <h2>CARD DETAILS</h2>
+        <section class="counter-page">
+            <p class="counter-name">Contador 1</p>
+            <p class="counter-description">Contador 1 que conta regressivamente de modo manual</p>
+            <p class="counter-type">manual</p>
+            <p class="progress-type">progressivo</p>
+            <img src="none" alt="none"><br>
+            <input type="checkbox" name="arquivar">
+            <label for="arquivar">restaurar</label>
+        </section>
+    </main>
+    <hr>
+    <hr>
+    <main class="counter-form">
+        <h2>CREATE NEW CARD</h2>
+        <form action="">
+            <section>
+                <label for="counter">nome do contador: </label>
+                <input type="text" name="counter"><br>
+            </section>
+                <hr>
+            <section>
+                <label for="description">descrição: </label>
+                <input type="text" name="description"><br>
+            </section>
+                <hr>
+            <section>
+                <input type="radio" id="auto" name="counter-type" value="auto"/>
+                <label for="counter-type">automático</label><br>
+                <input type="radio" id="manual" name="counter-type" value="manual"/>
+                <label for="counter-type">manual</label><br>
+            </section>
+            <hr>
+            <section>
+                <input type="radio" id="progressivo" name="progress-type" value="progressive"/>
+                <label for="progress-type">progressivo</label><br>
+                <input type="radio" id="regressivo" name="progress-type" value="regressive"/>
+                <label for="progress-type">regressivo</label><br>
+            </section>
+            <hr>
+            <section class="auto progress-type">
+                <select name="unit" id="unit">
+                    <option value="" disabled selected>unidade</option>
+                    <option value="seconts">Segundos</option>
+                    <option value="minutes">Minutos</option>
+                    <option value="hours">Horas</option>
+                    <option value="days">Dias</option>
+                    <option value="weeks">Semanas</option>
+                    <option value="months">Meses</option>
+                    <option value="years">Anos</option>
+                </select>
+            </section>
+            <hr>
+            <section class="auto progress-type progressive">
+                <label for="auto-meta">meta: </label>
+                <input type="number" name="auto-meta">
+            </section>
+            <hr>
+            <section>
+                <label for="auto-start">iniciar de: </label>
+                <input type="number" name="auto-start">
+            </section>
+            <hr>
+            <button type="button">Salvar</button>
+        </form>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
