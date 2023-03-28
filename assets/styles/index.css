@@ -52,13 +52,41 @@
     height: 50px;
     border: none;
     border-radius: 50%;
-    background-color: aqua;
-    color: purple;
-    font-size: 45px;
-    font-weight: 900;
+    background-color: #AF00FF;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.add-symbol {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.add-symbol:before, .add-symbol:after{
+    content:'';
+    position: absolute;
+    width: 36px;
+    height: 8px;
+    background-color:white;
+    border-radius: 3px;
+    top: 16px;
+}
+
+.add-symbol:before{
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    transform:rotate(0deg);
+    left:2px;
+}
+
+.add-symbol:after{
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:2px;
 }
 
 .select-color {
@@ -69,44 +97,32 @@
     flex-wrap: wrap;
 }
 
-.select-color .blue {
+.select-color div {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.select-color .blue {
     background-color: blue;
 }
 
 .select-color .red {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
     background-color: red;
 }
 
 .select-color .green {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
     background-color: green;
 }
 
 .select-color .lightblue {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
     background-color: lightblue;
 }
 
 .select-color .lightgreen {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
     background-color: lightgreen;
 }
 
 .select-color .lightslategray {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
     background-color: lightslategray;
 }
