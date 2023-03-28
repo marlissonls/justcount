@@ -4,32 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/index.css">
     <title>JustCount</title>
 </head>
-<body>
-    <main class="cards">
+<body class="body">
+    <main class="cards-page">
         <h2>CARDS</h2>
-        <section class="counter-card">
-            <p class="counter-name">Contador 1</p>
-            <p class="counter-type">manual</p>
-            <p class="progress-type">progressivo</p>
-            <img src="none" alt="none">
+        <section class="cards-box">
+            <section class="card-counter">
+                <p class="counter-name">Contador 1</p>
+                <p class="counter-type">manual</p>
+                <p class="progress-type">progressivo</p>
+                <img src="none" alt="none">
+            </section>
+            <section class="card-counter">
+                <p class="counter-name">Contador 2</p>
+                <p class="counter-type">automático</p>
+                <p class="progress-type">regressivo</p>
+                <img src="none" alt="none">
+            </section>
+            <section class="card-counter">
+                <p class="counter-name">Contador 1</p>
+                <p class="counter-type">manual</p>
+                <p class="progress-type">progressivo</p>
+                <img src="none" alt="none">
+            </section>
+            <section class="card-counter">
+                <p class="counter-name">Contador 2</p>
+                <p class="counter-type">automático</p>
+                <p class="progress-type">regressivo</p>
+                <img src="none" alt="none">
+            </section>
+            <section class="card-counter">
+                <p class="counter-name">Contador 1</p>
+                <p class="counter-type">manual</p>
+                <p class="progress-type">progressivo</p>
+                <img src="none" alt="none">
+            </section>
+            <section class="card-counter">
+                <p class="counter-name">Contador 2</p>
+                <p class="counter-type">automático</p>
+                <p class="progress-type">regressivo</p>
+                <img src="none" alt="none">
+            </section>
+            <section class="card-counter">
+                <p class="counter-name">Contador 1</p>
+                <p class="counter-type">manual</p>
+                <p class="progress-type">progressivo</p>
+                <img src="none" alt="none">
+            </section>
+            <section class="card-counter">
+                <p class="counter-name">Contador 2</p>
+                <p class="counter-type">automático</p>
+                <p class="progress-type">regressivo</p>
+                <img src="none" alt="none">
+            </section>
         </section>
-        <hr>
-        <section class="counter-card">
-            <p class="counter-name">Contador 2</p>
-            <p class="counter-type">automático</p>
-            <p class="progress-type">regressivo</p>
-            <img src="none" alt="none">
-        </section>
-        <hr>
         <section>
-            <button id="">+</button><br>
+            <button class="add-counter-btn">  +  </button><br>
         </section>
     </main>
-    <hr>
-    <hr>
-    <main class="card-page">
+    <main class="card-details">
         <h2>CARD DETAILS</h2>
         <section class="counter-page">
             <p class="counter-name">Contador 1</p>
@@ -41,41 +76,24 @@
             <label for="arquivar">arquivar</label>
         </section>
     </main>
-    <hr>
-    <hr>
     <main class="archived-cards">
         <h2>ARCHIVED CARDS</h2>
-        <section class="counter-card">
-            <p class="counter-name">Contador 3</p>
-            <p class="counter-type">manual</p>
-            <p class="progress-type">progressivo</p>
-            <img src="none" alt="none">
-        </section>
-        <hr>
-        <section class="counter-card">
-            <p class="counter-name">Contador 4</p>
-            <p class="counter-type">automático</p>
-            <p class="progress-type">regressivo</p>
-            <img src="none" alt="none">
-        </section>
-    </main>
-    <hr>
-    <hr>
-    <main class="archived-card-page">
-        <h2>CARD DETAILS</h2>
-        <section class="counter-page">
-            <p class="counter-name">Contador 1</p>
-            <p class="counter-description">Contador 1 que conta regressivamente de modo manual</p>
-            <p class="counter-type">manual</p>
-            <p class="progress-type">progressivo</p>
-            <img src="none" alt="none"><br>
-            <input type="checkbox" name="arquivar">
-            <label for="arquivar">restaurar</label>
+        <section class="cards-box">
+            <section class="card-counter">
+                <p class="counter-name">Contador 3</p>
+                <p class="counter-type">manual</p>
+                <p class="progress-type">progressivo</p>
+                <img src="none" alt="none">
+            </section>
+            <section class="card-counter">
+                <p class="counter-name">Contador 4</p>
+                <p class="counter-type">automático</p>
+                <p class="progress-type">regressivo</p>
+                <img src="none" alt="none">
+            </section>
         </section>
     </main>
-    <hr>
-    <hr>
-    <main class="counter-form">
+    <main class="create-card-form">
         <h2>CREATE NEW CARD</h2>
         <form action="">
             <section>
@@ -88,18 +106,27 @@
                 <input type="text" name="description"><br>
             </section>
                 <hr>
+            <section class="select-color">
+                <div class="blue" data-color></div>
+                <div class="red" data-color></div>
+                <div class="green" data-color></div>
+                <div class="lightblue" data-color></div>
+                <div class="lightgreen" data-color></div>
+                <div class="lightslategray" data-color></div>
+            </section>
+                <hr>
             <section>
                 <input type="radio" id="auto" name="counter-type" value="auto"/>
-                <label for="counter-type">automático</label><br>
+                <label for="auto">automático</label><br>
                 <input type="radio" id="manual" name="counter-type" value="manual"/>
-                <label for="counter-type">manual</label><br>
+                <label for="manual">manual</label><br>
             </section>
             <hr>
             <section>
-                <input type="radio" id="progressivo" name="progress-type" value="progressive"/>
-                <label for="progress-type">progressivo</label><br>
-                <input type="radio" id="regressivo" name="progress-type" value="regressive"/>
-                <label for="progress-type">regressivo</label><br>
+                <input type="radio" id="progressive" name="progress-type" value="progressive"/>
+                <label for="progressive">progressivo</label><br>
+                <input type="radio" id="regressive" name="progress-type" value="regressive"/>
+                <label for="regressive">regressivo</label><br>
             </section>
             <hr>
             <section class="auto progress-type">
