@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    padding-top: 40px;
+    background-color: #CC4400;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.cards-page,
+.counter-page,
+.archived-cards,
+.card-creator {
+    width: 705px;
+    height: fit-content;
+    padding: 20px;
+    border: 1px lightgray solid;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
