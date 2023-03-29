@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/cards_page.css">
+    <link rel="stylesheet" href="./assets/styles/counter_page.css">
+    <link rel="stylesheet" href="./assets/styles/archived_cards.css">
+    <link rel="stylesheet" href="./assets/styles/card_creator.css">
     <title>JustCount</title>
 </head>
 <body class="body">
@@ -12,52 +16,25 @@
         <h2>CARDS</h2>
         <section class="cards-box">
             <section class="card-counter">
-                <p class="counter-name">Contador 1</p>
-                <p class="counter-type">manual</p>
-                <p class="progress-type">progressivo</p>
-                <img src="none" alt="none">
+                <div class="card-title">
+                    <p class="emoji">&#x1F4AA;</p>
+                    <p class="card-counter-name">Flexões inclinadas</p>
+                </div>
+                <p class="card-status">Status: 44%</p>
             </section>
             <section class="card-counter">
-                <p class="counter-name">Contador 2</p>
-                <p class="counter-type">automático</p>
-                <p class="progress-type">regressivo</p>
-                <img src="none" alt="none">
+                <div class="card-title">
+                    <p class="emoji">&#x1F4AA;</p>
+                    <p class="card-counter-name">Flexões inclinadas</p>
+                </div>
+                <p class="card-status">Status: 44%</p>
             </section>
             <section class="card-counter">
-                <p class="counter-name">Contador 1</p>
-                <p class="counter-type">manual</p>
-                <p class="progress-type">progressivo</p>
-                <img src="none" alt="none">
-            </section>
-            <section class="card-counter">
-                <p class="counter-name">Contador 2</p>
-                <p class="counter-type">automático</p>
-                <p class="progress-type">regressivo</p>
-                <img src="none" alt="none">
-            </section>
-            <section class="card-counter">
-                <p class="counter-name">Contador 1</p>
-                <p class="counter-type">manual</p>
-                <p class="progress-type">progressivo</p>
-                <img src="none" alt="none">
-            </section>
-            <section class="card-counter">
-                <p class="counter-name">Contador 2</p>
-                <p class="counter-type">automático</p>
-                <p class="progress-type">regressivo</p>
-                <img src="none" alt="none">
-            </section>
-            <section class="card-counter">
-                <p class="counter-name">Contador 1</p>
-                <p class="counter-type">manual</p>
-                <p class="progress-type">progressivo</p>
-                <img src="none" alt="none">
-            </section>
-            <section class="card-counter">
-                <p class="counter-name">Contador 2</p>
-                <p class="counter-type">automático</p>
-                <p class="progress-type">regressivo</p>
-                <img src="none" alt="none">
+                <div class="card-title">
+                    <p class="emoji">&#x1F4AA;</p>
+                    <p class="card-counter-name">Flexões inclinadas</p>
+                </div>
+                <p class="card-status">Status: 44%</p>
             </section>
         </section>
         <section>
@@ -66,48 +43,75 @@
             </button>
         </section>
     </main>
-    <main class="card-details">
-        <h2>CARD DETAILS</h2>
-        <section class="counter-page">
-            <p class="counter-name">Contador 1</p>
-            <p class="counter-description">Contador 1 que conta regressivamente de modo manual</p>
-            <p class="counter-type">manual</p>
-            <p class="progress-type">progressivo</p>
-            <img src="none" alt="none"><br>
-            <input type="checkbox" name="arquivar">
-            <label for="arquivar">arquivar</label>
+    <main class="counter-page">
+        <h2>COUNTER DETAILS</h2>
+        <section class="counter-details">
+            <h2 class="counter-name">Contador 1</h2>
+            <div>
+                <h3>Descrição</h3>
+                <p class="counter-description">Contador 1 que conta regressivamente de modo manual</p>
+            </div>
+            <div>
+                <h3>Emoji do card</h3>
+                <p class="emoji" data-emoji>&#x1F4AA;</p>
+            </div>
+            <div>
+                <h3>Cor do card</h3>
+                <section class="select-color">
+                    <div class="lightgreen" data-color></div>
+                </section>
+            </div>
+            <div>
+                <h3>Tipo de contagem</h3>
+                <p class="counter-type">Manual</p>
+            </div>
+            <div>
+                <h3>Tipo de progressão</h3>
+                <p class="counter-type">Progressivo</p>
+            </div>
+            <div>
+                <input id="desabilitar"type="checkbox" name="arquivar">
+                <label for="desabilitar">Arquivar este card</label>
+            </div>
         </section>
     </main>
     <main class="archived-cards">
         <h2>ARCHIVED CARDS</h2>
         <section class="cards-box">
             <section class="card-counter">
-                <p class="counter-name">Contador 3</p>
-                <p class="counter-type">manual</p>
-                <p class="progress-type">progressivo</p>
-                <img src="none" alt="none">
+                <div class="card-title">
+                    <p class="emoji">&#x1F4AA;</p>
+                    <p class="card-counter-name">Flexões inclinadas</p>
+                </div>
+                <p class="card-status">Status: 44%</p>
             </section>
             <section class="card-counter">
-                <p class="counter-name">Contador 4</p>
-                <p class="counter-type">automático</p>
-                <p class="progress-type">regressivo</p>
-                <img src="none" alt="none">
+                <div class="card-title">
+                    <p class="emoji">&#x1F4AA;</p>
+                    <p class="card-counter-name">Flexões inclinadas</p>
+                </div>
+                <p class="card-status">Status: 44%</p>
+            </section>
+            <section class="card-counter">
+                <div class="card-title">
+                    <p class="emoji">&#x1F4AA;</p>
+                    <p class="card-counter-name">Flexões inclinadas</p>
+                </div>
+                <p class="card-status">Status: 44%</p>
             </section>
         </section>
     </main>
-    <main class="create-card-form">
+    <main class="card-creator">
         <h2>CREATE NEW CARD</h2>
-        <form action="">
+        <form action="" class="card-creator-form">
             <section>
                 <label for="counter">nome do contador: </label>
                 <input type="text" name="counter"><br>
             </section>
-                <hr>
             <section>
                 <label for="description">descrição: </label>
                 <input type="text" name="description"><br>
             </section>
-                <hr>
             <section class="select-color">
                 <div class="blue" data-color></div>
                 <div class="red" data-color></div>
@@ -116,21 +120,26 @@
                 <div class="lightgreen" data-color></div>
                 <div class="lightslategray" data-color></div>
             </section>
-                <hr>
+            <section class="select-emoji">
+                <p class="emoji" data-emoji>&#x1F4AA;</p>
+                <p class="emoji" data-emoji>&#x1F4AA;</p>
+                <p class="emoji" data-emoji>&#x1F4AA;</p>
+                <p class="emoji" data-emoji>&#x1F4AA;</p>
+                <p class="emoji" data-emoji>&#x1F4AA;</p>
+                <p class="emoji" data-emoji>&#x1F4AA;</p>
+            </section>
             <section>
                 <input type="radio" id="auto" name="counter-type" value="auto"/>
                 <label for="auto">automático</label><br>
                 <input type="radio" id="manual" name="counter-type" value="manual"/>
                 <label for="manual">manual</label><br>
             </section>
-            <hr>
             <section>
                 <input type="radio" id="progressive" name="progress-type" value="progressive"/>
                 <label for="progressive">progressivo</label><br>
                 <input type="radio" id="regressive" name="progress-type" value="regressive"/>
                 <label for="regressive">regressivo</label><br>
             </section>
-            <hr>
             <section class="auto progress-type">
                 <select name="unit" id="unit">
                     <option value="" disabled selected>unidade</option>
@@ -143,17 +152,14 @@
                     <option value="years">Anos</option>
                 </select>
             </section>
-            <hr>
             <section class="auto progress-type progressive">
                 <label for="auto-meta">meta: </label>
                 <input type="number" name="auto-meta">
             </section>
-            <hr>
             <section>
                 <label for="auto-start">iniciar de: </label>
                 <input type="number" name="auto-start">
             </section>
-            <hr>
             <button type="button">Salvar</button>
         </form>
     </main>
